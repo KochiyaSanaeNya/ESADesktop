@@ -1,0 +1,4 @@
+﻿<requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+    <!-- 关键点：必须是 requireAdministrator -->
+    <requestedExecutionLevel level="requireAdministrator" uiAccess="false" />
+</requestedPrivileges>

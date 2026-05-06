@@ -1,0 +1,24 @@
+﻿<Window x:Class="EdgeSecurityAccessDesktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edge Security Access" Height="350" Width="450" WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="API URL:" Margin="0,0,0,5" FontWeight="SemiBold"/>
+            <TextBox x:Name="UrlBox" Height="30" VerticalContentAlignment="Center" Margin="0,0,0,15" 
+                     Text="https://example.com/api"/>
+
+            <TextBlock Text="Username:" Margin="0,0,0,5" FontWeight="SemiBold"/>
+            <TextBox x:Name="UserBox" Height="30" VerticalContentAlignment="Center" Margin="0,0,0,15"/>
+
+            <TextBlock Text="Password:" Margin="0,0,0,5" FontWeight="SemiBold"/>
+            <PasswordBox x:Name="PassBox" Height="30" VerticalContentAlignment="Center" Margin="0,0,0,20"/>
+
+            <Button Content="连接并启动隧道" Height="45" Background="#007ACC" Foreground="White" 
+                    FontWeight="Bold" Click="Send_Click"/>
+
+            <TextBlock x:Name="StatusText" Text="等待输入..." Margin="0,15,0,0" 
+                       Foreground="Gray" TextWrapping="Wrap" TextAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>
